@@ -18,3 +18,9 @@ fruit_selected=streamlit.multiselect("Pick Some Fruits",list(my_fruit_list.index
 fruit_to_show=my_fruit_list.loc[fruit_selected]
 #streamlit.dataframe(my_fruit_list)
 streamlit.dataframe(fruit_to_show)
+
+
+#New section to display fruityvice API
+import requests
+fruityvice_response= request.get("https//:fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice response)
